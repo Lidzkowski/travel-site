@@ -1,14 +1,15 @@
-var gulp = require('gulp'),
+var gulp = require('gulp'), //variables for post css packages
 	postcss = require('gulp-postcss'),
 	autoprefixer = require('autoprefixer'),
 	cssvars = require('postcss-simple-vars'),
 	nested = require('postcss-nested'),
 	cssImport = require('postcss-import'),
-	mixins = require('postcss-mixins');
+	mixins = require('postcss-mixins'),
+	hexrgba = require('postcss-hexrgba');
 
-gulp.task('styles', function () { // gulp tasks for postcss
+gulp.task('styles', function () { // gulp task for postcss packages
 	return gulp.src('./app/assets/styles/styles.css')
-		.pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
+		.pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba, autoprefixer]))
 		.on('error', function (errorInfo) {
 			console.log(errorInfo.toString());
 			this.emit('end');
