@@ -6,8 +6,7 @@
     "jquery-smooth-scroll": "2.2.0",
     "lazysizes": "4.0.0-rc3",
     "normalize.css": "7.0.0",
-    "picturefill": "3.0.2",
-    "waypoints": "4.0.1"
+    "picturefill": "3.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -34,6 +33,7 @@
     "postcss-nested": "^2.0.4",
     "postcss-simple-vars": "^4.0.0",
     "sel": "^0.7.5",
+    "waypoints": "^4.0.1",
     "webpack": "^3.4.0"
   }
 }
