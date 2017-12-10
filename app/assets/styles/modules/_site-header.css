@@ -7,6 +7,7 @@
 	
 	&--is-expanded {
 		background-color: rgba($mainBlue, .55);
+		position: fixed;
 	}
 	
 	@mixin atMedium {
@@ -56,6 +57,7 @@
 		z-index: 10;
 		top: 10px;
 		right: 10px;
+		position: fixed;
 		
 		&::before {
 			content: "";
@@ -67,6 +69,7 @@
 			background-color: #fff;
 			transform-origin: 0 0;
 			transition: transform .3s ease-out;
+			background-color: $mainOrange;
 		}
 		
 		&__middle {
@@ -78,6 +81,7 @@
 			background-color: #fff;
 			transition: opacity .3s ease-out;
 			transform-origin: 0 50%;
+			background-color: $mainOrange;
 		}
 		
 		&::after {
@@ -90,6 +94,7 @@
 			background-color: #fff;
 			transform-origin: 0 100%;
 			transition: all .3s ease-out;
+			background-color: $mainOrange;
 		}
 		
 		@mixin atMedium {

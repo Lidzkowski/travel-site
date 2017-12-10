@@ -671,7 +671,7 @@ a {
 
 @media (min-width: 1010px) {
 			.page-section--testimonials.lazyloaded {
-				background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+				background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
 				background-size: cover;
 			}
 	}
@@ -1016,11 +1016,11 @@ a {
 Instead edit gulp/templates/sprite*/
 
 .icon {
-			background-image: url('/assets/images/sprites/sprite-e79e95cc.svg');
+			background-image: url('../../assets/images/sprites/sprite-e79e95cc.svg');
 		}
 
 .no-svg .icon {
-	background-image: url('/assets/images/sprites/sprite-e79e95cc.png');
+	background-image: url('../../assets/images/sprites/sprite-e79e95cc.png');
 }
 
 .icon--clear-view-escapes {
@@ -1128,6 +1128,7 @@ Instead edit gulp/templates/sprite*/
 
 .site-header--is-expanded {
 		background-color: rgba(47,85,114, .55);
+		position: fixed;
 	}
 
 @media (min-width: 800px) {
@@ -1190,6 +1191,7 @@ Instead edit gulp/templates/sprite*/
 		z-index: 10;
 		top: 10px;
 		right: 10px;
+		position: fixed;
 		
 	}
 
@@ -1207,6 +1209,7 @@ Instead edit gulp/templates/sprite*/
 			transition: -webkit-transform .3s ease-out;
 			transition: transform .3s ease-out;
 			transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+			background-color: #d59541;
 		}
 
 .site-header__menu-icon__middle {
@@ -1220,6 +1223,7 @@ Instead edit gulp/templates/sprite*/
 			transition: opacity .3s ease-out;
 			-webkit-transform-origin: 0 50%;
 			        transform-origin: 0 50%;
+			background-color: #d59541;
 		}
 
 .site-header__menu-icon::after {
@@ -1234,6 +1238,7 @@ Instead edit gulp/templates/sprite*/
 			        transform-origin: 0 100%;
 			-webkit-transition: all .3s ease-out;
 			transition: all .3s ease-out;
+			background-color: #d59541;
 		}
 
 @media (min-width: 800px) {
